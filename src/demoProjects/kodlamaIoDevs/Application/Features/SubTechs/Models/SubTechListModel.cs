@@ -1,0 +1,15 @@
+﻿using Application.Features.SubTechs.Dtos;
+using Core.Persistence.Paging;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Application.Features.SubTechs.Models
+{
+    public class SubTechListModel: BasePageableModel
+    {
+        public IList<SubTechListDto> Items { get; set; }
+    }
+}
